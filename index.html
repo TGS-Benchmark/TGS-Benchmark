@@ -3,7 +3,7 @@
 
     .blur {
 
-        filter: blur(5px);
+        filter: blur(9px);
 
     }
 
@@ -194,8 +194,8 @@ https://templatemo.com/tm-543-breezed
 
             <div class="row">
                 <h6>TGS Benchmark</h6>
-                <p style="margin-top: 10px;">transaction networks are divided randomly into train and test sets. The train set is used to train foundation models with different sizes; then, the trained models are evaluated on the test set. </p>
-                <img src="assets/images/FT.png" alt="" style="max-width: 100%;
+                <p style="margin-top: 10px;">transaction networks are divided randomly into train and test sets. The train set is used to train foundation models with different sizes; then, the trained models are evaluated on the test set. Test AUC of foundation models trained on 4, 16 and 64 networks and evaluated on unseen test datasets. We compare the performance with persistence forecast, and single models trained and tested on each dataset.  </p>
+                <img src="assets/images/htgn-log2-all-v3%20(1)-1.png" alt="" style="max-width: 100%;
                         height: auto; alignment: center; text-align: center;">
             </div>
         </div>
@@ -210,16 +210,23 @@ https://templatemo.com/tm-543-breezed
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="left-text-content">
                         <div class="section-heading">
-                            <h6>TGS Data</h6>
-                            <h2>TGS data preparation has three main steps</h2>
+                            <h6>TGS System Overview</h6>
+                            <h2>TGS has three main steps</h2>
                         </div>
-                       <p>The TGS dataset extraction includes: (1) Token Extraction: extracting the token transaction network from our P2P Ethereum live node. (2) Discretizing: creating weekly snapshots for the Discretized Temporal Directed Graph (DTDG) setting. (3) Labeling: assigning labels based on network growth; increasing trends are labeled one, decreasing trends are labeled zero.
+                       <p>
+
+                        <ol>
+                            <li>(1) Token extraction: extracting the token transaction network from our P2P Ethereum live node.</li>
+                            <li>(2) Discretization: creating weekly snapshots to form discrete time dynamic graphs.</li>
+                            <li>(3) Foundation Model Training: TGS transaction networks are divided randomly into train and test sets. We train the FMs on a collection of training networks. Lastly, FMs are tested on 20 unseen test networks.</li>
+                        </ol>
+
                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="right-text-content">
-                        <img src="assets/images/Data_Procesing_V2.png" alt="" style="max-width: 100%;
+                        <img src="assets/images/System_overview_v3.png" alt="" style="max-width: 100%;
                         height: auto; alignment: center; text-align: center; vertical-align: middle;">
 
                     </div>
